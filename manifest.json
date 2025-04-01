@@ -3,7 +3,10 @@
   "name": "My Chrome Extension",
   "version": "1.0",
   "description": "A simple Chrome extension",
-  "permissions": [],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "action": {
     "default_popup": "popup.html"
   }
