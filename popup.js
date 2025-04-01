@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // ボタンのテキストを一時的に変更してフィードバックを提供
       const originalText = button.textContent;
-      button.textContent = 'Copied!';
+      button.textContent = 'コピーしました！';
       setTimeout(() => {
         button.textContent = originalText;
       }, 2000);
       
     } catch (error) {
       console.error('Error:', error);
-      output.value = 'Error: Could not copy title and URL';
+      output.value = 'エラー: タイトルとURLのコピーに失敗しました';
     }
   });
 }); 

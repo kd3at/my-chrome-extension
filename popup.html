@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Chrome Extension</title>
+  <title>タイトルとURLコピー</title>
   <style>
     body {
       width: 300px;
       padding: 10px;
+      font-family: "Hiragino Kaku Gothic Pro", "メイリオ", sans-serif;
     }
     button {
       margin: 5px;
@@ -16,6 +17,7 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 14px;
     }
     button:hover {
       background-color: #45a049;
@@ -29,13 +31,19 @@
       border: 1px solid #ddd;
       border-radius: 4px;
       resize: none;
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <h2>Copy Title & URL</h2>
-  <button id="copyButton">Copy Title & URL</button>
-  <textarea id="output" readonly></textarea>
+  <h2>タイトルとURLをコピー</h2>
+  <button id="copyButton">コピーする</button>
+  <textarea id="output" readonly placeholder="ここにコピーした内容が表示されます"></textarea>
   <script src="popup.js"></script>
 </body>
 </html> 

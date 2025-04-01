@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Chrome Extension",
+  "name": "タイトルとURLコピー",
   "version": "1.0",
-  "description": "A simple Chrome extension",
+  "description": "WebページのタイトルとURLを簡単にコピーできる拡張機能",
   "permissions": [
     "activeTab",
     "scripting"
